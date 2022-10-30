@@ -1,0 +1,20 @@
+flowchart TB
+    %% Documentation: https://mermaid-js.github.io/mermaid/#/flowchart
+    A(("/start")):::entryPoint -->|"Lists available commands"| End(("END")):::termination
+    B(("/new")):::entryPoint -->|"What data do you want store to database:"| C((SELECT_DATA)):::state
+    C --> |"Waiting input"| L(("text")):::userInput
+    L --> |"New data stored."|End(("END")):::termination
+    D(("/plot")):::entryPoint -->|"What data do you want to plot:"| E((SELECT_PLOTTER)):::state
+    E --> |"Waiting input"| F(("text")):::userInput
+    F --> |"Plotting.."|End(("END")):::termination
+    G(("/export")):::entryPoint -->|"What data do you want to export:"| H((SELECT_EXPORTER)):::state
+    H --> |"Waiting input"| I(("text")):::userInput
+    I --> |"Exporting.."|End(("END")):::termination
+    J(("ANY STATE")):::state --> K("/cancel"):::userInput
+    K -->|"Action cancelled."| End
+    Z(("/help")):::entryPoint -->|"Lists available commands"| End(("END")):::termination
+    classDef userInput  fill:#2a5279, color:#ffffff, stroke:#ffffff
+    classDef state fill:#222222, color:#ffffff, stroke:#ffffff
+    classDef entryPoint fill:#009c11, stroke:#42FF57, color:#ffffff
+    classDef termination fill:#bb0007, stroke:#E60109, color:#ffffff
+    %%style nestedConversation fill:#999999, stroke-width:2px, stroke:#333333

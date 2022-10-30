@@ -15,7 +15,7 @@ Base project for Great Northern Health Tracking Trek. EESTEC LC Tampere workshop
 
 - `pip install python-telegram-bot -U --pre`
   - pre-releases https://github.com/python-telegram-bot/python-telegram-bot/wiki/introduction-to-the-API
-  - If you want to use older version like 13.0
+  - If you want to use older version like 13.0 the syntax is quite different.
 
 ### Data is stored with sqlite3 database so let's install that
 
@@ -38,5 +38,15 @@ Base project for Great Northern Health Tracking Trek. EESTEC LC Tampere workshop
 - start conversation with https://t.me/botfather
 - make a copy of `env-example.cfg` and rename it to `env.cfg`
 - `env.cfg` is se to .gitignore so that we wont't publish our personal bot token by accident
-- 
+
+## 3. Run echobot and conversationbot to test things out
+
+- `python3 echobot.py`
+- `python3 conversationbot.py`
+
+## 4. Check the features 
+
+- check out features.mmd and start to plan your own features
+- core features would be at least to store data to database and plot it on request
+- after that we would like to plot 3, 5, 7 day trends propably
 

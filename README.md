@@ -5,25 +5,25 @@ Base project for Great Northern Health Tracking Trek. EESTEC LC Tampere workshop
 
 ### Git if you don't have already
 
-- 'sudo apt install git'
+- `sudo apt install git`
 
 ### Package installer for Python
 
-- 'sudo apt install python3-pip'
+- `sudo apt install python3-pip`
 
 ### Python Telegram Bot 
 
-- 'pip install python-telegram-bot -U --pre'
+- `pip install python-telegram-bot -U --pre`
   - pre-releases https://github.com/python-telegram-bot/python-telegram-bot/wiki/introduction-to-the-API
   - If you want to use older version like 13.0
 
 ### Data is stored with sqlite3 database so let's install that
 
-- 'sudo apt install sqlite3'
+- `sudo apt install sqlite3`
 
 ### Installing all libraries listed in requirements
 
-- 'pip install -r requirements.txt'
+- `pip install -r requirements.txt`
 
 ## 1. Getting access to repository
 
@@ -36,7 +36,7 @@ Base project for Great Northern Health Tracking Trek. EESTEC LC Tampere workshop
 ## 2. Talking to botfather and getting your token
 
 - start conversation with https://t.me/botfather
-- make a copy of 'env-example.cfg' and rename it to 'env.cfg'
-- 'env.cfg' is se to .gitignore so that we wont't publish our personal bot token by accident
+- make a copy of `env-example.cfg` and rename it to `env.cfg`
+- `env.cfg` is se to .gitignore so that we wont't publish our personal bot token by accident
 - 
 
